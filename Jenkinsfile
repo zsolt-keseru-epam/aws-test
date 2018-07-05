@@ -1,9 +1,9 @@
 pipeline {
   agent any
   stages {
-    stage('') {
+    stage('Git') {
       steps {
-        sh 'mvn dist'
+        echo '${GIT_COMMIT}'
       }
     }
   }
